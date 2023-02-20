@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Навчальний калькулятор</title>
+        </head>
+    <body>
+<label for="calculation">Введіть математичний вираз:</label>
+<input type="text" id="calculation">
+<button onclick="calculate()">Обчислити</button>
+<script>
+    function calculate() {
+        let calculation = document.getElementById("calculation").value;
+        let result = eval(calculation);
+        console.log(result);
+    }
+</script>
+    </body>
+</html>
